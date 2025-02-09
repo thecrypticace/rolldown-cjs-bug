@@ -6,3 +6,6 @@ Object.defineProperty(exports, "a", {
   enumerable: true,
   get: () => () => ({ b }),
 });
+
+// Also fails when using:
+// exports.a = () => ({ a });
