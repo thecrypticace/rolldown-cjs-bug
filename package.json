@@ -1,0 +1,19 @@
+{
+  "name": "rolldown-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx rolldown --config ./rolldown.config.mjs",
+    "run-direct:minimal": "node ./examples/minimal/index.mjs",
+    "run-direct:tailwind": "node ./examples/tailwind/index.mjs",
+    "run-built:minimal": "npm run build && node ./dist/minimal.mjs",
+    "run-built:tailwind": "npm run build && node ./dist/tailwind.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "rolldown": "^1.0.0-beta.3-commit.a884059",
+    "tailwindcss": "^3.4.17"
+  }
+}
